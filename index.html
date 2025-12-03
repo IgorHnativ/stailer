@@ -298,6 +298,21 @@ function buyProduct(){
     const url = `https://t.me/+${phone}?text=${text}`;
     window.open(url, '_blank');
 }
+ // Відслідковуємо натискання кнопки "Купити"
+  const buyButton = document.querySelector('.buy-btn');
+
+  buyButton.addEventListener('click', function() {
+    // Відправляємо подію "ads_conversion___1" до Google Ads
+    gtag('event', 'ads_conversion___1', {
+      "send_to": "AW-11147911486/xxxxxxxxxx",  // Ваш Google Ads ID
+      "value": 4000,                           // Ціна товару
+      "currency": "UAH",                       // Валюта
+      "transaction_id": "1234567890"           // Ідентифікатор транзакції (можете генерувати або залишити порожнім)
+    });
+
+    // Викликаємо функцію для переходу до Telegram
+    buyProduct();
+  });
 </script>
 </body>
 </html>
