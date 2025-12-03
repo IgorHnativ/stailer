@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<title>Фен-стайлер 6 в 1 — Преміальний стайлер для волосся | AeroBeauty</title>
+
+<meta name="description" content="Потужний преміальний фен-стайлер 6 в 1. Аналог Dyson: сушить, завиває, випрямляє. 1300 Вт, 6 насадок, іонізація, регулювання температури. Доставка по Україні.">
+<meta name="keywords" content="фен стайлер, фен 6 в 1, dyson аналог, фен для волосся, стайлер для укладки, фен укладка, фен для жінок, фен стайлер купити Україна">
+<link rel="canonical" href="https://your_site_url.com">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Фен-стайлер 6 в 1 — Преміальний стайлер для волосся">
+<meta property="og:description" content="Мультифункціональний фен-стайлер 6 в 1: сушить, випрямляє, завиває. Знижка до -1000 грн!">
+<meta property="og:image" content="https://your_site_url.com/images/fen1.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://your_site_url.com">
+
+<!-- Structured Data (SEO Google) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Фен-стайлер 6 в 1",
+  "image": [
+    "https://your_site_url.com/images/fen1.jpg",
+    "https://your_site_url.com/images/fen2.jpg",
+    "https://your_site_url.com/images/fen3.jpg"
+  ],
+  "description": "Преміальний фен-стайлер 6 в 1 з потужністю 1300 Вт, іонізацією та 6 насадками. Професійний догляд і укладка волосся вдома.",
+  "brand": "AeroBeauty",
+  "offers": {
+    "@type": "Offer",
+    "price": "4000",
+    "priceCurrency": "UAH",
+    "availability": "https://schema.org/InStock",
+    "url": "https://your_site_url.com"
+  }
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ================== CSS ================== */
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+.header {width:100%; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; background:white; position:sticky; top:0; box-shadow:0 2px 10px rgba(0,0,0,0.1); z-index:1000;}
+.logo { font-size:28px; font-weight:bold; }
+.menu-toggle { display:none; font-size:30px; cursor:pointer; transition:0.3s; }
+.nav { display:flex; gap:20px; }
+.nav a { text-decoration:none; color:#333; font-weight:bold; transition:0.3s; }
+@media(max-width:768px){
+    .menu-toggle { display:block; }
+    .nav { display:flex; flex-direction:column; width:100%; background:#333; position:absolute; top:60px; left:0; text-align:center; overflow:hidden; max-height:0; transition:max-height 0.4s ease; }
+    .nav.active { max-height:500px; }
+    .nav a { color:white; padding:10px 0; font-size:20px; }
+    .menu-toggle.open { transform: rotate(90deg); }
+}
+.sale-banner { width:100%; background:linear-gradient(90deg,#ff6600,#ff8533); color:white; text-align:center; font-size:1.2rem; font-weight:700; padding:12px 0; box-shadow:0 2px 6px rgba(0,0,0,0.2); position:relative; z-index:999; }
+@media(max-width:768px){ .sale-banner { font-size:1rem; padding:10px 0; } }
+.hero { position:relative; height:100vh; color:white; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden; }
+.hero-slides { position:absolute; top:0; left:0; width:100%; height:100%; }
+.slide { position:absolute; top:0; left:0; width:100%; height:100%; background-size:cover; background-position:center; opacity:0; transition:opacity 1s ease-in-out; }
+.slide.active { opacity:1; }
+.hero-content { position:relative; z-index:2; padding:0 20px; }
+.hero-content h1 { font-size:3rem; margin-bottom:15px; font-weight:700; color:#ffe0b3; text-shadow:0 2px 8px rgba(0,0,0,0.4); }
+.hero-content p { font-size:1.3rem; margin-bottom:20px; font-weight:300; line-height:1.4; color:#f8f8f8; text-shadow:0 2px 6px rgba(0,0,0,0.5); }
+.hero-content .btn { padding:12px 25px; font-size:1.1rem; background:#ff6600; color:white; border-radius:50px; text-decoration:none; font-weight:600; transition:0.3s; }
+.hero-content .btn:hover { background:#ff8533; transform:translateY(-3px); }
+.products { padding:50px 20px; background:#f7f7f7; text-align:center; }
+.product-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px; margin-top:30px; justify-items:center; }
+.product-card { background:white; border-radius:12px; padding:25px; box-shadow:0 5px 20px rgba(0,0,0,0.1); transition:0.3s; width:100%; max-width:350px; }
+.product-card:hover { transform: translateY(-5px); }
+.product-images { display:flex; gap:10px; margin-top:15px; justify-content:center; flex-wrap:wrap; }
+.product-images img { width:90px; height:90px; object-fit:cover; border-radius:5px; cursor:pointer; transition:0.3s; }
+.product-images img:hover { transform:scale(1.1); border:2px solid #ff6600; }
+.price { font-size:22px; color:#ff6600; font-weight:bold; margin:10px 0; }
+.old-price { text-decoration: line-through; color:#777; margin-left:10px; }
+.buy-btn { width:100%; padding:15px; background:#ff6600; border:none; border-radius:50px; color:white; cursor:pointer; margin-top:20px; font-size:1.1rem; font-weight:600; transition:0.3s; }
+.buy-btn:hover { background:#ff8533; transform:translateY(-2px); }
+.reviews { padding:50px 20px; background:white; text-align:center; }
+.review-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:20px; justify-items:center; }
+.review { padding:20px; background:#f1f4ff; border-radius:10px; }
+.why-us { padding:50px 20px; }
+.why-us-container { display:flex; align-items:center; gap:30px; max-width:1200px; margin:0 auto; flex-wrap:wrap; }
+.why-us-img video { width:100%; max-width:500px; border-radius:10px; }
+.why-us-text { flex:1; }
+.delivery { padding:50px 20px; background:#f7f7f7; text-align:center; }
+.delivery h2 { font-size:2rem; margin-bottom:15px; }
+.delivery p { font-size:1.2rem; margin-bottom:15px; }
+.delivery ul li { font-size:1.1rem; margin:10px 0; text-align:left; max-width:600px; margin-left:auto; margin-right:auto; }
+.np-logo { width:80px; height:auto; vertical-align:middle; margin-left:10px; display:inline-block; }
+@media(max-width:768px){ .np-logo { width:60px; margin-left:5px; } }
+.contact { padding:40px; text-align:center; }
+footer { padding:20px; background:#222; color:white; text-align:center; }
+.modal { display:none; position:fixed; z-index:100; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; }
+.modal-content { max-width:90%; max-height:80%; border-radius:10px; }
+.modal-arrow { position:absolute; top:50%; transform:translateY(-50%); font-size:60px; color:white; cursor:pointer; padding:20px; user-select:none; }
+.left-arrow { left:20px; }
+.right-arrow { right:20px; }
+.close { position:absolute; top:20px; right:35px; color:white; font-size:40px; cursor:pointer; }
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">AeroBeauty</div>
+    <div class="menu-toggle" id="mobile-menu" aria-label="Меню мобільної навігації">&#9776;</div>
+    <nav class="nav" id="navMenu">
+        <a href="#hero">Головна</a>
+        <a href="#products">Товар</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#why-us">Чому фен-стайлер</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+</header>
+
+<section class="sale-banner">🔥 ЗНИЖКИ ДО - 1000 грн СЬОГОДНІ 🔥</section>
+
+<section class="hero" id="hero">
+    <div class="hero-slides">
+        <div class="slide active" style="background-image:url('images/fen1.jpg')" aria-label="Фен-стайлер фото 1"></div>
+        <div class="slide" style="background-image:url('images/fen2.jpg')" aria-label="Фен-стайлер фото 2"></div>
+        <div class="slide" style="background-image:url('images/fen3.jpg')" aria-label="Фен-стайлер фото 3"></div>
+    </div>
+    <div class="hero-content">
+        <h1>Преміальний фен-стайлер 6 в 1 для ідеальної укладки</h1>
+        <p>Аналог Dyson з потужним повітряним потоком, турботою про волосся та професійною укладкою.</p>
+        <a href="#products" class="btn">Переглянути товар</a>
+    </div>
+</section>
+
+<section id="products" class="products">
+    <h2>Фен-стайлер 6 в 1 — Хіт продажів 2025</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <h3>Фен-стайлер 6 в 1</h3>
+            <p class="price">4000 грн <span class="old-price">5000 грн</span></p>
+            <h3>Технічні характеристики:</h3>
+            <ul style="text-align:left; margin-top:10px;">
+                <li>Потужність: 1300 Вт</li>
+                <li>Температурні режими: 3 рівні</li>
+                <li>Швидкість повітряного потоку: 3 режими</li>
+                <li>Насадки в комплекті: 6</li>
+                <li>Матеріал покриття: кераміка з іонним ефектом</li>
+                <li>Довжина дроту: 1.8 м (обертовий)</li>
+            </ul>
+            <div class="product-images">
+                <img src="images/fen1.jpg" alt="Фен-стайлер 6 в 1 — фото 1">
+                <img src="images/fen2.jpg" alt="Фен-стайлер 6 в 1 — фото 2">
+                <img src="images/fen3.jpg" alt="Фен-стайлер 6 в 1 — фото 3">
+                <img src="images/fen4.jpg" alt="Фен-стайлер 6 в 1 — насадки">
+                <img src="images/fen5.jpg" alt="Фен-стайлер крупний план">
+                <img src="images/fen6.jpg" alt="Фен-стайлер у використанні">
+            </div>
+            <a href="https://t.me/AeroBeauty" target="_blank" class="buy-btn">Купити</a>
+        </div>
+    </div>
+</section>
+
+<section id="reviews" class="reviews">
+    <h2>Відгуки покупців</h2>
+    <div class="review-grid">
+        <div class="review"><p>“Цей фен просто чудо! Волосся гладке, без пушіння, укладка тримається весь день.”</p><span>- Марина</span></div>
+        <div class="review"><p>“Дуже легкий і зручний. Моя шевелюра виглядає як після салону!”</p><span>- Олена</span></div>
+        <div class="review"><p>“Насадки універсальні, роблю будь-яку зачіску за хвилини.”</p><span>- Аліна</span></div>
+        <div class="review"><p>“Потужність супер, іонізація реально працює — волосся блискуче й здорове.”</p><span>- Катерина</span></div>
+    </div>
+</section>
+
+<section id="why-us" class="why-us">
+    <div class="why-us-container">
+
+        <div class="why-us-img">
+            <video src="images/fen.MOV" controls autoplay muted playsinline 
+                   style="width:100%; max-width:500px; border-radius:10px;"></video>
+        </div>
+
+        <div class="why-us-text">
+            <h2>Чому обрати наш фен-стайлер</h2>
+            <p><strong>Multifunction Hair Styler</strong> – сучасний стайлер, що поєднує сушіння, випрямлення та завивку.</p>
+            <ul>
+                <li><strong>Дбайливе укладання:</strong> рівномірний розподіл тепла зберігає волосся блискучим.</li>
+                <li><strong>Універсальність:</strong> сушіння, вирівнювання або завивка — все в одному.</li>
+                <li><strong>Зручність:</strong> легка заміна насадок.</li>
+                <li><strong>Для всіх типів волосся:</strong> підходить навіть для густого і неслухняного волосся.</li>
+            </ul>
+            <p style="margin-top:15px; font-weight:bold;">Замовляйте <strong>Multifunction Hair Styler</strong> вже сьогодні!</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="delivery" class="delivery">
+    <h2>Доставка та оплата</h2>
+    <p>Ми пропонуємо декілька способів оплати та доставки:</p>
+    <ul>
+        <li><strong>Накладений платіж:</strong> оплата при отриманні.</li>
+        <li><strong>Оплата на карту:</strong> швидко та зручно.</li>
+        <li><strong>Самовивіз:</strong> у нашому магазині.</li>
+        <li><strong>Доставка Новою Поштою:</strong> <img src="images/np-logo.png" alt="Логотип Нової Пошти" class="np-logo"> по всій Україні.</li>
+        <li><strong>Гарантія:</strong> 3 місяці на всі товари.</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Контакти</h2>
+    <p style="margin-top:20px; font-size:1.2rem; font-weight:600; text-align:center;">
+        Для замовлення пишіть нам у Telegram: 
+        <a href="https://t.me/AeroBeauty" target="_blank" style="color:#ff6600; font-weight:700; text-decoration:none;">
+            @AeroBeauty
+        </a>
+    </p>
+</section>
+
+<footer>© 2025 AeroBeauty</footer>
+
+<div id="imgModal" class="modal">
+    <span class="close">&times;</span>
+    <span class="modal-arrow left-arrow">&#10094;</span>
+    <img class="modal-content" id="modalImg">
+    <span class="modal-arrow right-arrow">&#10095;</span>
+</div>
+
+<script>
+// MOBILE MENU
+const menuToggle = document.getElementById("mobile-menu");
+const navMenu = document.getElementById("navMenu");
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    menuToggle.classList.toggle("open");
+});
+document.querySelectorAll("#navMenu a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        menuToggle.classList.remove("open");
+    });
+});
+
+// HERO SLIDER
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+function showSlide(index){ slides.forEach((s,i)=>s.classList.toggle('active', i===index)); }
+function nextSlide(){ current=(current+1)%slides.length; showSlide(current); }
+setInterval(nextSlide, 3000);
+
+// PRODUCT MODAL
+const modal = document.getElementById('imgModal');
+const modalImg = document.getElementById('modalImg');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+const closeBtn = document.querySelector('.close');
+
+const productImages = document.querySelectorAll('.product-images img');
+let currentImgIndex = 0;
+let images = [];
+productImages.forEach(img=>images.push(img.src));
+productImages.forEach((img,index)=>{
+    img.addEventListener('click',()=>{
+        currentImgIndex=index;
+        modal.style.display='flex';
+        modalImg.src=img.src;
+    });
+});
+leftArrow.addEventListener('click',()=>{
+    currentImgIndex=(currentImgIndex-1+images.length)%images.length;
+    modalImg.src=images[currentImgIndex];
+});
+rightArrow.addEventListener('click',()=>{
+    currentImgIndex=(currentImgIndex+1)%images.length;
+    modalImg.src=images[currentImgIndex];
+});
+closeBtn.addEventListener('click',()=>modal.style.display='none');
+modal.addEventListener('click',e=>{ if(e.target===modal) modal.style.display='none'; });
+
+// BUY BUTTON WITH TELEGRAM
+function buyProduct(){
+    const text = encodeURIComponent("Хочу замовити Фен-стайлер 6 в 1 – 4000 грн");
+    const phone = "380991234567"; 
+    const url = `https://t.me/+${phone}?text=${text}`;
+    window.open(url, '_blank');
+}
+</script>
+</body>
+</html>
+
