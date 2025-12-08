@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фен-стайлер як альтернатива Dyson Airwrap | AeroBeauty</title>
+<meta name="description" content="Дізнайтеся, чому фен-стайлер 6 в 1 може стати альтернативою Dyson Airwrap. Переваги, ефективність та професійний результат вдома.">
+<meta name="keywords" content="фен стайлер, Dyson Airwrap, альтернатива Dyson, укладка волосся, фен для волосся">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Poppins', sans-serif; margin:0; padding:0; line-height:1.6; background:#f7f7f7; color:#333; }
+header, footer { background:#222; color:white; text-align:center; padding:20px; }
+a { color:#ff6600; text-decoration:none; transition:0.3s; }
+a:hover { text-decoration:underline; }
+.article-container { max-width:900px; margin:40px auto; background:white; padding:30px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+.article-container h1 { color:#ff6600; margin-bottom:20px; font-size:2.2rem; }
+.article-container h2 { color:#333; margin-top:30px; margin-bottom:15px; }
+.article-container p { margin-bottom:15px; font-size:1.1rem; }
+.article-container ul { margin-left:20px; margin-bottom:15px; }
+.cta-article { margin-top:40px; padding:30px; background:#fff4e6; text-align:center; border-radius:10px; }
+.cta-article h2 { color:#ff6600; margin-bottom:15px; font-size:2rem; }
+.cta-article p { font-size:1.2rem; margin-bottom:20px; }
+.cta-article a { display:inline-block; padding:14px 35px; background:#ff6600; color:white; border-radius:50px; font-weight:600; font-size:1.2rem; transition:0.3s; }
+.cta-article a:hover { background:#ff8533; transform:translateY(-2px); }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">AeroBeauty</div>
+</header>
+
+<div class="article-container">
+    <h1>Фен-стайлер як альтернатива Dyson Airwrap</h1>
+
+    <p>Фен-стайлер 6 в 1 може стати доступною та ефективною альтернативою Dyson Airwrap. Він дозволяє робити укладку різними способами, зберігаючи волосся здоровим завдяки іонізації та регулюванню температури.</p>
+
+    <h2>Переваги фен-стайлера 6 в 1</h2>
+    <ul>
+        <li>6 насадок для будь-якого типу укладки: випрямлення, завивка, об’єм.</li>
+        <li>Регульована температура і швидкість повітряного потоку.</li>
+        <li>Іонізація для гладкого та блискучого волосся.</li>
+        <li>Більш доступна ціна у порівнянні з Dyson Airwrap.</li>
+    </ul>
+
+    <h2>Результат вдома як у салоні</h2>
+    <p>Ви зможете легко повторювати професійні укладки без шкоди для волосся, економлячи час і гроші на салонні процедури.</p>
+
+    <div class="cta-article">
+        <h2>Замовляй свій Фен-стайлер 6 в 1!</h2>
+        <p>Професійна укладка вдома, 6 насадок, іонізація та потужність 1300 Вт.</p>
+        <a href="https://aerobeauty.com.ua" target="_blank">Перейти на головну сторінку</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 AeroBeauty
+</footer>
+
+</body>
+</html>
