@@ -439,12 +439,18 @@ function changeFavicon(src) {
     link.href = src;
 }
 
-// При навігації по секціях
-document.querySelectorAll('nav a').forEach(a => {
-    a.addEventListener('click', () => {
-        changeFavicon('/favicon.ico'); // Ваш favicon
+// Всі секції
+const sections = document.querySelectorAll('section');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Змінюємо favicon, коли секція видима
+            changeFavicon('/favicon.ico');
+        }
     });
-});
+}, { threshold: 0.5 }); // 50% секції у вікні
+
+sections.forEach(section => observer.observe(section));
 </script>
 </body>
 </html>
