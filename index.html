@@ -428,37 +428,7 @@ function buyProduct(){
 </script>
 
 <!-- Скрипт для favicon -->
-<script>
-function changeFavicon(src) {
-    let link = document.querySelector("link[rel*='icon']");
-    if (!link) {
-        link = document.createElement('link');
-        link.rel = 'icon';
-        document.head.appendChild(link);
-    }
-    link.href = src;
-}
 
-// Визначаємо поточну секцію при скролі
-function updateFaviconOnScroll() {
-    const sections = document.querySelectorAll('section');
-    const scrollPos = window.scrollY + window.innerHeight / 2; // середина екрану
-    sections.forEach(section => {
-        const top = section.offsetTop;
-        const bottom = top + section.offsetHeight;
-        if (scrollPos >= top && scrollPos < bottom) {
-            // Можна змінювати різні іконки для різних секцій
-            changeFavicon('/favicon.ico'); // або різні іконки для різних секцій
-        }
-    });
-}
-
-// Викликаємо при скролі
-window.addEventListener('scroll', updateFaviconOnScroll);
-
-// Викликаємо відразу при завантаженні сторінки
-window.addEventListener('load', updateFaviconOnScroll);
-</script>
 </body>
 </html>
 
