@@ -421,6 +421,31 @@ function buyProduct(){
   ]
 }
 </script>
+...
+<!-- Ваші інші скрипти -->
+<script>
+// MOBILE MENU, HERO SLIDER, PRODUCT MODAL і т.д.
+</script>
+
+<!-- Скрипт для favicon -->
+<script>
+function changeFavicon(src) {
+    let link = document.querySelector("link[rel*='icon']");
+    if (!link) {
+        link = document.createElement('link');
+        link.rel = 'shortcut icon';
+        document.head.appendChild(link);
+    }
+    link.href = src;
+}
+
+// При навігації по секціях
+document.querySelectorAll('nav a').forEach(a => {
+    a.addEventListener('click', () => {
+        changeFavicon('/favicon.ico'); // Ваш favicon
+    });
+});
+</script>
 </body>
 </html>
 
