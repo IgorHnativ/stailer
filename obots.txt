@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aerobeauty.com.ua/sitemap.xml
+Host: aerobeauty.com.ua
